@@ -1,0 +1,4 @@
+srcname:tenantA
+evt : "internal scan" or evt : "internal port (123) or \"login failed\" "
+prot : 14 and user : admin
+evt : ddos and ( datetime : now or datetime : yesterday)
