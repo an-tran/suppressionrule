@@ -1,0 +1,251 @@
+corrinfoid:8500*
+corrinfoid:85002
+corrinfoid:"850*"
+-corrinfoid:"850*"
+corrinfoid:"85*2"
+NOT corrinfoid:85002
+logid:648b877b-8ad4-41fd-bba7-ad0f35d6498b
+logid:"648b877b-8ad4-41fd-bba7-ad0f35d6498b"
+logid:648b877b*
+logid:648b*8b
+-logid:648b*8b
+logid:[648b877b TO ad0f35d6498b]
+NOT logid:648b877b-8ad4-41fd-bba7-ad0f35d6498b
+logid:"648b877b*"
+parsertype:MAGI
+parsertype:syslog
+parsertype:"MAGI"
+parsertype:MA*
+parsertype:M*I
+-parsertype:"M*I"
+NOT parsertype:MAGI
+receivedayinmonth:15
+receivedayinmonth:"15"
+-receivedayinmonth:15
+NOT receivedayinmonth:15
+receivedayinmonth:[1 TO 5]
+receivedayinmonth:1*
+receivedayinyear:232
+receivedayinyear:"232"
+-receivedayinyear:232
+NOT receivedayinyear:232
+receivedayinyear:[23 TO 232]
+receivemillisecond:240
+receivemillisecond:"240"
+-receivemillisecond:240
+NOT receivemillisecond:240
+receivemillisecond:[2 TO 4]
+receivemillisecond:24*
+receivemonth:8
+receivemonth:"8"
+-receivemonth:8
+NOT receivemonth:8
+receivemonth:[1 TO 8]
+receivemonth:1*
+receivesecond:12
+receivesecond:"12"
+-receivesecond:12
+NOT receivesecond:12
+receivesecond:[12 TO 20]
+receivedayinweek:2
+receivedayinweek:"2"
+-receivedayinweek:2
+NOT receivedayinweek:2
+receivedayinweek:[2 TO 5]
+receivehour:14
+receivehour:"14"
+-receivehour:14
+NOT receivehour:14
+receivehour:[1 TO 4]
+receiveminute:20
+receiveminute:"20"
+-receiveminute:20
+NOT receiveminute:20
+receiveminute:[10 TO 20]
+receivems:1566281724669
+receivems:"1566281724669"
+-receivems:1566281724669
+NOT receivems:1566281724669
+receivems:[1566281724669 TO 1566281724669]
+receivezone:25200000
+receivezone:"25200000"
+receivezone:[2 TO 5]
+logdate:1562927526000
+logdate:"1562927526000"
+-logdate:1562927526000
+NOT logdate:1562927526000
+logdate:[1 TO 5]
+msg:JavaScript Code Evasion Attempt
+msg:"JavaScript Code Evasion Attempt"
+msg:"JavaScript Code*"
+msg:"JavaScript Code*Attempt"
+-msg:"JavaScript Code*"
+NOT msg:"JavaScript Code*"
+obssvcname:Microsoft-Windows-Security-Auditing
+obssvcname:"Microsoft-Windows-Security-Auditing"
+obssvcname:Microsoft*
+obssvcname:Microsoft*Auditing
+-obssvcname:Microsoft*
+NOT obssvcname:Microsoft-Windows-Security-Auditing
+pname:Microsoft Active Directory and Windows
+pname:"Microsoft Active Directory and Windows"
+pname:Microsoft*
+pname:"Microsoft* Windows"
+-pname:Microsoft*
+NOT pname:Microsoft*
+receivedate:2019-08-20T06:45:25.442+0000
+srcmac:98:00:c6:c3:ea:6c
+srcmac:"98:00:c6:c3:ea:6c"
+srcmac:98*
+srcmac:98*6c
+-srcmac:98:00:c6:c3:ea:6c
+NOT srcmac:98:00:c6:c3:ea:6c
+taxevtcon:account
+taxevtcon:"account"
+-taxevtcon:account
+NOT taxevtcon:account
+taxevtst:OTHER
+taxevtst:"OTHER"
+-taxevtst:other
+NOT taxevtst:other
+taxoutobj:DENIED
+taxoutobj:"DENIED"
+-taxoutobj:DENIED
+NOT taxoutobj:DENIED
+tenantname:S0016-7630740032-001
+-tenantname:S0016-7630740032-001
+tenantname:S0016-7630740032*
+tenantname:S0016*001
+NOT tenantname:S0016-7630740032-001
+trgname:wheel
+-trgname:wheel
+trgname:whe*
+trgname:wh*l
+NOT trgname:wh*l
+trgsvcname:ctm-wifi-auto
+-trgsvcname:ctm-wifi-auto
+trgsvcname:ctm*
+trgsvcname:"ctm*auto"
+NOT trgsvcname:ctm-wifi-auto
+colname:STWLC01
+-colname:STWLC01
+colname:STWL*
+colname:"STWL*1"
+NOT colname:STWLC01
+-parselogstatus:failed
+evt:Rapid AP General
+evt:"Rapid AP General"
+evt:Ra*
+evt:Ra*al
+-evt:"An*"
+evt:"Ra*"
+colip:192.168.1.135
+colip:"192.168.1.135"
+-colip:"192.168.1.135"
+colip:192.*
+colip:192.*35
+colip:"192.*"
+colport:5141
+colport:"5141"
+-colport:"5141"
+-colport:51*1
+-colport:"51*1"
+colport:51*1
+couname:192.168.1.91
+couname:"192.168.1.91"
+-couname:"192.168.1.91"
+couname:"192.*"
+couname:192.*91
+couname:[192 TO 91]
+logcode:14
+logcode:"14"
+-logcode:"14"
+-logcode:1*
+logcode:1*
+-logcode:"1*"
+couip:192.168.1.91
+couip:"192.168.1.91"
+-couip:192.168.1.91
+couip:192.168*
+couip:192.168*.91
+couip:[192 TO 91]
+mappedseverity:0
+mappedseverity:"0"
+-mappedseverity:0
+NOT mappedseverity:0
+mappedseverity:[0 TO 1]
+obsname:DistributorA
+obsname:"DistributorA"
+-obsname:"DistributorA"
+obsname:Distri*
+obsname:Dis*utorA
+NOT obsname:DistributorA
+parsedtime:1566287135210
+parsedtime:"1566287135210"
+-parsedtime:1566287135210
+NOT parsedtime:1566287135210
+parserid:999
+parserid:"999"
+-parserid:999
+parserid:9*
+parserid:9*9
+NOT parserid:999
+parserver:1
+parserver:"1"
+-parserver:1
+NOT parserver:1
+parserver:[1 TO 4]
+rawmsg:<14>Apr 24 18:32:13 Knife.auto.local MSWinEventLog        1        Security        445691        Tue Apr 24 18:32:13 2018        4719        Microsoft-Windows-Security-Auditing        N/A        N/A        Success Audit        Knife.auto.local        Audit Policy Change                System audit policy was changed.    Subject:   Security ID:  S-1-5-18   Account Name:  KNIFE$   Account Domain:  AUTO   Logon ID:  0x3E7    Audit Policy Change:   Category:  Logon/Logoff   Subcategory:  Logon   Subcategory GUID: {0CCE9215-69AE-11D9-BED3-505054503030}   Changes:  Success Added        156843605
+rawmsg:"<14>Apr 24 18:32:13 Knife.auto.local MSWinEventLog        1        Security        445691        Tue Apr 24 18:32:13 2018        4719        Microsoft-Windows-Security-Auditing        N/A        N/A        Success Audit        Knife.auto.local        Audit Policy Change                System audit policy was changed.    Subject:   Security ID:  S-1-5-18   Account Name:  KNIFE$   Account Domain:  AUTO   Logon ID:  0x3E7    Audit Policy Change:   Category:  Logon/Logoff   Subcategory:  Logon   Subcategory GUID: {0CCE9215-69AE-11D9-BED3-505054503030}   Changes:  Success Added        156843605"
+sha256hash:68b6cd3bfca39a9ce52aa1ced00f487fff7d208bfa5334c710fd1d1227c488f0
+sha256hash:"68b6cd3bfca39a9ce52aa1ced00f487fff7d208bfa5334c710fd1d1227c488f0"
+-sha256hash:68b6cd3bfca39a9ce52aa1ced00f487fff7d208bfa5334c710fd1d1227c488f0
+sha256hash:68b6cd3bfca39a9ce52aa1ced00f487*
+sha256hash:68b6cd3bfca39a9*fd1d1227c488f0
+NOT sha256hash:68b6cd3bfca39a9ce52aa1ced00f487fff7d208bfa5334c710fd1d1227c488f0
+taxevtact:modify
+taxevtact:"modify"
+-taxevtact:modify
+NOT taxevtact:modify
+taxevtobj:user
+taxevtobj:"user"
+-taxevtobj:user
+NOT taxevtobj:user
+taxoutcon:generic
+taxoutcon:"generic"
+-taxoutcon:generic
+NOT taxoutcon:generic
+taxoutpro:success
+taxoutpro:"success"
+-taxoutpro:success
+NOT taxoutpro:success
+trgmac:60:D0:2C:32:22:22
+trgmac:"60:D0:2C:32:22:22"
+-trgmac:60:D0:2C:32:22:22
+trgmac:60:D0:*
+trgmac:60:D0:*2:22:22
+NOT trgmac:60:D0:*2:22:22
+trgsvccpn:WLAN
+trgsvccpn:"WLAN"
+-trgsvccpn:WLAN
+trgsvccpn:WL*
+trgsvccpn:W*N
+NOT trgsvccpn:WLAN
+sev:4
+sev:"4"
+-sev:4
+NOT sev:4
+sev:[1 TO 4]
+triggeredevt:["1038c45a-010a-4d3f-a868-eba6a55a88f4","10d4cda5-ac9f-4e11-85c1-f2e3f5d6535a","2cebcc5e-c0c3-4bce-b2ba-c41eb3adda8b","7cd7f72c-a0ca-4a68-b8a0-4eda878fdd66","9205a322-da3c-4e44-a45b-36e5858383cb","9c5fe211-d8b4-474f-9ebc-7e02f4ec2f0b","b5c4bf4f-befa-41de-9bab-5ee54765c031","cf0cb318-6d4b-4056-8683-992257aeebc3","dba48f12-5464-4ed7-a495-74849f90fa9b","f8ca96a2-305f-4ce7-aab4-b8b8b2a43f09"]
+triggeredevt:"["1038c45a-010a-4d3f-a868-eba6a55a88f4","10d4cda5-ac9f-4e11-85c1-f2e3f5d6535a","2cebcc5e-c0c3-4bce-b2ba-c41eb3adda8b","7cd7f72c-a0ca-4a68-b8a0-4eda878fdd66","9205a322-da3c-4e44-a45b-36e5858383cb","9c5fe211-d8b4-474f-9ebc-7e02f4ec2f0b","b5c4bf4f-befa-41de-9bab-5ee54765c031","cf0cb318-6d4b-4056-8683-992257aeebc3","dba48f12-5464-4ed7-a495-74849f90fa9b","f8ca96a2-305f-4ce7-aab4-b8b8b2a43f09"]"
+-triggeredevt:["1038c45a-010a-4d3f-a868-eba6a55a88f4","10d4cda5-ac9f-4e11-85c1-f2e3f5d6535a","2cebcc5e-c0c3-4bce-b2ba-c41eb3adda8b","7cd7f72c-a0ca-4a68-b8a0-4eda878fdd66","9205a322-da3c-4e44-a45b-36e5858383cb","9c5fe211-d8b4-474f-9ebc-7e02f4ec2f0b","b5c4bf4f-befa-41de-9bab-5ee54765c031","cf0cb318-6d4b-4056-8683-992257aeebc3","dba48f12-5464-4ed7-a495-74849f90fa9b","f8ca96a2-305f-4ce7-aab4-b8b8b2a43f09"]
+NOT triggeredevt:["1038c45a-010a-4d3f-a868-eba6a55a88f4","10d4cda5-ac9f-4e11-85c1-f2e3f5d6535a","2cebcc5e-c0c3-4bce-b2ba-c41eb3adda8b","7cd7f72c-a0ca-4a68-b8a0-4eda878fdd66","9205a322-da3c-4e44-a45b-36e5858383cb","9c5fe211-d8b4-474f-9ebc-7e02f4ec2f0b","b5c4bf4f-befa-41de-9bab-5ee54765c031","cf0cb318-6d4b-4056-8683-992257aeebc3","dba48f12-5464-4ed7-a495-74849f90fa9b","f8ca96a2-305f-4ce7-aab4-b8b8b2a43f09"]
+triggeredevt:["1038c45a-010a-4d3f-a868-eba6a55a88f4","10d4cda5-ac9f-4e11-85c1-f2e3f5d6535a","2cebcc5e-c0c3-4bce-b2ba-c41eb3adda8b","7cd7f72c-a0ca-4a68-b8a0-4eda878fdd66","9205a322-da3c-4e44-a45b-36e5858383cb","9c5fe211-d8b4-474f-9ebc-7e02f4ec2f0b","b5c4bf4f-befa-41de-9bab-5ee54765c031","cf0cb318-6d4b-4056-8683-992257aeebc3","dba48f12-5464-4ed7-*
+triggeredevt:["1038c45a-010a-4d3f-a868-eba6a55a88f4","10d4cda5-*-f2e3f5d6535a","2cebcc5e-c0c3-4bce-b2ba-c41eb3adda8b","7cd7f72c-a0ca-4a68-b8a0-4eda878fdd66","9205a322-da3c-4e44-a45b-36e5858383cb","9c5fe211-d8b4-474f-9ebc-7e02f4ec2f0b","b5c4bf4f-befa-41de-9bab-5ee54765c031","cf0cb318-6d4b-4056-8683-992257aeebc3","dba48f12-5464-4ed7-a495-74849f90fa9b","f8ca96a2-305f-4ce7-aab4-b8b8b2a43f09"]
+evt:Ra* AND sev:[1 TO 4]
+parsertype:MAGI OR parsertype:sys*
+evt:Ra* AND -sev:1
+NOT evt:Ra* AND -sev:1
+evt:Ra* OR -sev:1
+NOT evt:Ra* OR -sev:1
+evt:Ra* AND parselogstatus:success OR -sev:1
