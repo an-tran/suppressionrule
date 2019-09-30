@@ -28,8 +28,10 @@ STRING: ~[,\n\r":() [\]]+ | STRING_LITERAL;
 //    | '"' ~[\n\r"]* '"';
 STRING_LITERAL
     :   '"'
-        ( '\\"'
-        | ~[\n\r"]
+        { StringBuilder b = new StringBuilder(); }
+        ( '\\"'         { b.appendCodePoint('"'); }
+          | c=~[\n\r"]  { b.appendCodePoint(c); }
         )*
         '"'
+        { setText(b.toString()); }
     ;
