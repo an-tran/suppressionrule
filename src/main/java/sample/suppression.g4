@@ -9,7 +9,7 @@ val : STRING
 operand: pair
     | '(' expression ')';
 negation:
-    ('not'|'-')* operand;
+    ('not'| 'NOT' |'-')* operand;
 boolExpr: negation (( andOp | orOp) negation)*;
 andOp: 'AND' | 'and';
 orOp: 'OR' | 'or';
