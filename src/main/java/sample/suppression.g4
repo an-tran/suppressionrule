@@ -24,13 +24,13 @@ fragment DIGIT : '0'..'9';
 WS : [ \t]+ -> skip ;
 INT : [0-9]+;
 NEWLINE: '\r'? '\n';
-STRING: ~[,\n\r":() [\]]+ | STRING_LITERAL;
+STRING: ~[ ,\n\r":()[\]-] ~[ ,\n\r":()[\]]* | STRING_LITERAL;
 //    | '"' ~[\n\r"]* '"';
 STRING_LITERAL
     :   '"'
         { StringBuilder b = new StringBuilder(); }
         ( '\\"'         { b.appendCodePoint('"'); }
-          | c=~[\n\r"]  { b.appendCodePoint(c); }
+          | ~[\n\r"]
         )*
         '"'
         { setText(b.toString()); }
