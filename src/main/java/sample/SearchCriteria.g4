@@ -1,23 +1,34 @@
-grammar suppression;
+grammar SearchCriteria;
 
+options {
+  language = Java;
+}
+//
+//@header {
+//    package com.futuredata.common.searchcriteria.gen;
+//}
+
+criteria: expression ( NEWLINE expression)*;
+expression :  boolExpr;
+boolExpr: negationExpr (boolOp negationExpr)*;
+negationExpr:
+    negationOp* operand;
+operand: pair
+    | '(' expression ')';
 pair : key ':' val;
+
 key : STRING;
 val : STRING                                            # stringValue
     | INT                                               # intValue
     | '(' (STRING|INT) (STRING|INT)* ')'                # multiTermsValue
     | '[' (STRING|INT) ('TO'|'to') (STRING|INT) ']'     # rangeValue
     ;
-operand: pair
-    | '(' expression ')';
-negationExpr:
-    negationOp* operand;
-boolExpr: negationExpr (( andOp | orOp) negationExpr)*;
 negationOp: 'not'| 'NOT' |'-';
+boolOp: andOp | orOp;
 andOp: 'AND' | 'and';
 orOp: 'OR' | 'or';
-expression :  boolExpr;
 
-program: expression ( NEWLINE expression)*;
+
 
 fragment LETTER : ('a'..'z' | 'A'..'Z') ;
 fragment DIGIT : '0'..'9';

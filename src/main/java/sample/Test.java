@@ -2,9 +2,7 @@ package sample;
 
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.ParseTree;
-import org.antlr.v4.runtime.tree.RuleNode;
-import sample.gen.suppression.suppressionLexer;
-import sample.gen.suppression.suppressionParser;
+
 
 import java.io.FileInputStream;
 import java.io.IOException;
