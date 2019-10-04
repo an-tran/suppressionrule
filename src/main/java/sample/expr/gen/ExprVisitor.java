@@ -23,9 +23,52 @@ public interface ExprVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitStat(ExprParser.StatContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link ExprParser#expr}.
+	 * Visit a parse tree produced by the {@code div}
+	 * labeled alternative in {@link ExprParser#expr}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitExpr(ExprParser.ExprContext ctx);
+	T visitDiv(ExprParser.DivContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code sub}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSub(ExprParser.SubContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code mul}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMul(ExprParser.MulContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code id}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitId(ExprParser.IdContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code compound}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCompound(ExprParser.CompoundContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code int}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitInt(ExprParser.IntContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code plus}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPlus(ExprParser.PlusContext ctx);
 }

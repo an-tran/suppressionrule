@@ -15,36 +15,24 @@ import java.util.Stack;
  */
 public class EvalListener extends ExprBaseListener {
     Stack<Integer> stack = new Stack<>();
+
     @Override
-    public void exitExpr(ExprParser.ExprContext ctx) {
-        if (ctx.ID() != null) {
-            stack.push(0);
-        } else if (ctx.INT() != null) {
-            stack.push(Integer.parseInt(ctx.INT().getText()));
-        } else {
-            int op2 = stack.pop();
-            int op1 = stack.pop();
-            switch (ctx.op.getText()) {
-                case "+":
-                    stack.push(op1 + op2);
-                    break;
-                case "-":
-                    stack.push(op1 - op2);
-                    break;
-                case "*":
-                    stack.push(op1 * op2);
-                    break;
-                case "/":
-                    stack.push(op1 / op2);
-                    break;
-                default:
-                    throw new RuntimeException("Invalid operator " + ctx.op.getText());
-            }
-        }
+    public void exitId(ExprParser.IdContext ctx) {
+        stack.push(0);
+    }
+
+    @Override
+    public void exitInt(ExprParser.IntContext ctx) {
+        stack.push(Integer.parseInt(ctx.getText()));
+    }
+
+    @Override
+    public void exitPlus(ExprParser.PlusContext ctx) {
+        stack.push(stack.pop() + stack.pop());
     }
 
     public static void main(String[] args) {
-        ExprLexer lexer = new ExprLexer(CharStreams.fromString("1 + 2\r\n"));
+        ExprLexer lexer = new ExprLexer(CharStreams.fromString("1 + 15\r\n"));
         ExprParser parser = new ExprParser(new CommonTokenStream(lexer));
         ParseTree tree = parser.prog();
         ParseTreeWalker walker = new ParseTreeWalker();

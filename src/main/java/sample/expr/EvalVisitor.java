@@ -12,28 +12,18 @@ import sample.expr.gen.ExprParser;
  */
 public class EvalVisitor extends ExprBaseVisitor<Integer> {
     @Override
-    public Integer visitExpr(ExprParser.ExprContext ctx) {
-        if (ctx.ID() != null) {
-            return 0;
-        } else if (ctx.INT() != null) {
-            return Integer.parseInt(ctx.INT().getText());
-        } else {
-            int op1 = visit(ctx.expr(0));
-            int op2 = visit(ctx.expr(1));
-            switch (ctx.op.getText()) {
-                case "+":
-                    return op1 + op2;
-                case "-":
-                    return op1 - op2;
-                case "*":
-                    return op1 * op2;
-                case "/":
-                    return op1 / op2;
-                default:
-                    throw new RuntimeException("Invalid operator " + ctx.op.getText());
-            }
-        }
+    public Integer visitId(ExprParser.IdContext ctx) {
+        return 0;
+    }
 
+    @Override
+    public Integer visitInt(ExprParser.IntContext ctx) {
+        return Integer.parseInt(ctx.getText());
+    }
+
+    @Override
+    public Integer visitPlus(ExprParser.PlusContext ctx) {
+        return visit(ctx.expr(0)) + visit(ctx.expr(1));
     }
 
     @Override
