@@ -1,12 +1,14 @@
 // Define a grammar called HEllo
 grammar Hello;
-//r : 'hello' ID ;
-//ID : [a-zA-Z]+ ;
-//WS : [ \t\r\n]+ -> skip ;
+rule : 'hello' WS ID ;
 
-program: STRING  (  ';'   STRING)+;
+ID : [a-zA-Z]+ ;
+WS : [ \t\r\n]+ -> skip ;
+//WS : [ \t\r\n]+ ;
+
+//program: STRING  (  ';'   STRING)+;
 //program: STRING  (  '\n'  STRING)+;
 //op: 'AND' | 'and' | 'OR' | 'or';
 //WS : [ \t]+ -> skip ;
-STRING: ~[,;\n\r"()]+ ;
-NEWLINE:'\r'? '\n'->skip;
+//STRING: ~[,;\n\r"()]+ ;
+//NEWLINE:'\r'? '\n'->skip;
