@@ -18,6 +18,7 @@ public class EvalVisitor extends ExprBaseVisitor<Integer> {
 
     @Override
     public Integer visitInt(ExprParser.IntContext ctx) {
+        System.out.println(ctx.getText());
         return Integer.parseInt(ctx.getText());
     }
 
@@ -38,5 +39,6 @@ public class EvalVisitor extends ExprBaseVisitor<Integer> {
         EvalVisitor v = new EvalVisitor();
         // traverse tree to eval expression
         System.out.println(v.visit(tree));
+//        System.out.println(tree.toStringTree(parser));
     }
 }
